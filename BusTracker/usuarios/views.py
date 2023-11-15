@@ -146,8 +146,8 @@ def manejar_error_autenticacion(request, form, template_name, mensaje_error):
         "error": mensaje_error
     })
 
-def mapa(request):
-    return render(request, 'mapa.html')
+def mapa(request, destination):
+    return render(request, 'mapa.html', {'destination':destination})
 
 
 

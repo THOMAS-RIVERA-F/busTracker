@@ -18,6 +18,9 @@
             defer
         ></script>
         <script src="{% static 'index.js' %}"></script>
+        <script>
+            window.data = {destination: {{ destination }}}
+        </script>
     </body>
 </html>
 {% endblock %}
